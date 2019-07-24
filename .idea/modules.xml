@@ -3,17 +3,23 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Vectory.iml" filepath="$PROJECT_DIR$/Vectory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/feature/user/app/app.iml" filepath="$PROJECT_DIR$/buildSrc/feature/user/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/base/base.iml" filepath="$PROJECT_DIR$/lib/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/buildSrc/buildSrc.iml" filepath="$PROJECT_DIR$/buildSrc/buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/feature/buildSrc-feature.iml" filepath="$PROJECT_DIR$/buildSrc/feature/buildSrc-feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/lib/buildSrc-lib.iml" filepath="$PROJECT_DIR$/buildSrc/lib/buildSrc-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/common/common.iml" filepath="$PROJECT_DIR$/lib/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature/designer/designer.iml" filepath="$PROJECT_DIR$/feature/designer/designer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/feature/designer/app/designer-app.iml" filepath="$PROJECT_DIR$/feature/designer/app/designer-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/feature/designer/export/designer-export.iml" filepath="$PROJECT_DIR$/feature/designer/export/designer-export.iml" />
-      <module fileurl="file://$PROJECT_DIR$/feature/designer/pkg/designer-pkg.iml" filepath="$PROJECT_DIR$/feature/designer/pkg/designer-pkg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/feature/user/export/export.iml" filepath="$PROJECT_DIR$/buildSrc/feature/user/export/export.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature/feature.iml" filepath="$PROJECT_DIR$/feature/feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/feature/designer/feature-designer.iml" filepath="$PROJECT_DIR$/buildSrc/feature/designer/feature-designer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/feature/launcher/feature-launcher.iml" filepath="$PROJECT_DIR$/buildSrc/feature/launcher/feature-launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/feature/user/feature-user.iml" filepath="$PROJECT_DIR$/buildSrc/feature/user/feature-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature/launcher/launcher.iml" filepath="$PROJECT_DIR$/feature/launcher/launcher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/feature/launcher/app/launcher-app.iml" filepath="$PROJECT_DIR$/feature/launcher/app/launcher-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/lib/base/lib-base.iml" filepath="$PROJECT_DIR$/buildSrc/lib/base/lib-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/lib/common/lib-common.iml" filepath="$PROJECT_DIR$/buildSrc/lib/common/lib-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/feature/user/pkg/pkg.iml" filepath="$PROJECT_DIR$/buildSrc/feature/user/pkg/pkg.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature/user/user.iml" filepath="$PROJECT_DIR$/feature/user/user.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature/user/app/user-app.iml" filepath="$PROJECT_DIR$/feature/user/app/user-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature/user/export/user-export.iml" filepath="$PROJECT_DIR$/feature/user/export/user-export.iml" />

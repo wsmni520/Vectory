@@ -1,7 +1,7 @@
 //GLog.d("setting.gradle")
-//ConfigUtils.addBuildListener(gradle)
+ConfigUtils.addBuildListener(gradle)
 
-include ':lib:base', ':lib:common',
-        ':feature:launcher:app',
-        ':feature:designer:export', ':feature:designer:pkg', ':feature:designer:app' ,
-        ':feature:user:app'  , ':feature:user:pkg' , ':feature:user:export'
+//include ':lib:base', ':lib:common',
+//        ':feature:launcher:app',
+//        ':feature:designer:export', ':feature:designer:pkg', ':feature:designer:app' ,
+//        ':feature:user:app'  , ':feature:user:pkg' , ':feature:user:export'

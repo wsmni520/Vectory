@@ -17,35 +17,39 @@ class ConfigUtils {
             @Override
             void settingsEvaluated(Settings settings) {
                 GLog.d("settingsEvaluated")
-//                includeModule(settings)
+                includeModule(settings)
             }
 
             @Override
             void projectsLoaded(Gradle gradle) {
                 GLog.d("projectsLoaded")
-//                gradle.addProjectEvaluationListener(new ProjectEvaluationListener() {
-//                    @Override
-//                    void beforeEvaluate(Project project) {
-//                        if (project.subprojects.isEmpty()) {// 定位到具体 project
-//                            if (project.name == "app") {
-//                                GLog.l(project.toString() + " applies buildApp.gradle")
-//                                project.apply {
-//                                    from "${project.rootDir.path}/buildApp.gradle"
-//                                }
-//                            } else {
-//                                GLog.l(project.toString() + " applies buildLib.gradle")
-//                                project.apply {
-//                                    from "${project.rootDir.path}/buildLib.gradle"
-//                                }
-//                            }
-//                        }
-//                    }
-//
-//                    @Override
-//                    void afterEvaluate(Project project, ProjectState projectState) {
-//                    }
-//                })
+                gradle.addProjectEvaluationListener(new ProjectEvaluationListener() {
+                    @Override
+                    void beforeEvaluate(Project project) {
+
+                        if (project.subprojects.isEmpty()) {// 定位到具体 project
+                            if (project.name == "app") {
+                                GLog.l(project.toString() + " applies buildApp.gradle")
+                                project.apply {
+                                    from "${project.rootDir.path}/buildApp.gradle"
+                                }
+                            } else {
+                                GLog.l(project.toString() + " applies buildLib.gradle")
+                                if (project.name != "buildSrc") {
+                                    project.apply {
+                                        from "${project.rootDir.path}/buildLib.gradle"
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @Override
+                    void afterEvaluate(Project project, ProjectState projectState) {
+                    }
+                })
             }
+
             @Override
             void projectsEvaluated(Gradle gradle) {
                 GLog.d("projectsEvaluated")
@@ -58,10 +62,10 @@ class ConfigUtils {
             }
 
             private static includeModule(Settings settings) {
-                settings.include ':lib:base',':lib:common',
+                settings.include ':lib:base', ':lib:common',
                         ':feature:launcher:app',
-                        ':feature:designer:export', ':feature:designer:pkg', ':feature:designer:app' ,
-                        ':feature:user:export', ':feature:user:pkg', ':feature:user:app'
+                        ':feature:designer:export', ':feature:designer:pkg', ':feature:designer:app',
+                        ':feature:user:app', ':feature:user:pkg', ':feature:user:export'
             }
         })
 
